@@ -1,8 +1,8 @@
 "use client";
 
 import "./globals.css";
-import Header from "../../components/Header/page";
-import Footer from "../../components/Footer/page";
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
 import { Provider } from "react-redux";
 import { createStore } from "@reduxjs/toolkit";
 import reducer from "./redux/slices/authSlice";

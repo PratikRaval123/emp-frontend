@@ -1,4 +1,5 @@
 import React from "react";
+import NextLink from "next/link";
 
 export default function Footer() {
   return (
@@ -6,31 +7,26 @@ export default function Footer() {
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm  sm:text-center text-white">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
-          </a>
+          <NextLink href="/" className="hover:underline">
+            PMS Service™
+          </NextLink>
           . All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">
-              About
-            </a>
+            <NextLink href="/" className="hover:underline me-4 md:me-6">
+              Home
+            </NextLink>
           </li>
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">
-              Privacy Policy
-            </a>
+            <NextLink href="/Service" className="hover:underline me-4 md:me-6">
+              Services
+            </NextLink>
           </li>
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">
-              Licensing
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:underline">
-              Contact
-            </a>
+            <NextLink href="/Pricing" className="hover:underline me-4 md:me-6">
+              Pricing
+            </NextLink>
           </li>
         </ul>
       </div>
